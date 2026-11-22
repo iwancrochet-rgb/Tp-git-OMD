@@ -10,7 +10,7 @@ public class Calculette {
         return a - b;
     }
 
-    public double multiplier(double a, double b) {
+    public double multiplication(double a, double b) {
         return a * b;
     }
 
@@ -25,7 +25,7 @@ public class Calculette {
         return switch (operateur) {
             case '+' -> additionner(a, b);
             case '-' -> soustraire(a, b);
-            case '*' -> multiplier(a, b);
+            case '*' -> multiplication(a, b);
             case '/' -> diviser(a, b);
             default -> throw new IllegalArgumentException("Opérateur invalide : " + operateur);
         };
