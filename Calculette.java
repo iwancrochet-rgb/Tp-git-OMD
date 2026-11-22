@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculette {
 
-    public double additionner(double a, double b) {
+    public double additionner(double b, double a) {
         return a + b;
     }
 
