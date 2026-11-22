@@ -14,7 +14,7 @@ public class Calculette {
         return a * b;
     }
 
-    public double diviser(double a, double b) {
+    public double division(double a, double b) {
         if (b == 0) {
             throw new ArithmeticException("Division par zéro impossible.");
         }
@@ -26,7 +26,7 @@ public class Calculette {
             case '+' -> additionner(a, b);
             case '-' -> soustraire(a, b);
             case '*' -> multiplication(a, b);
-            case '/' -> diviser(a, b);
+            case '/' -> division(a, b);
             default -> throw new IllegalArgumentException("Opérateur invalide : " + operateur);
         };
     }
