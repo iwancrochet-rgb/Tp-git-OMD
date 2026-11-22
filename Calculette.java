@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculette {
 
-    public double additionnerConflit(double b, double a) {
+    public double additionner(double b, double a) {
         return a + b;
     }
 
@@ -24,7 +24,7 @@ public class Calculette {
 
     public double calculer(double a, double b, char operateur) {
         return switch (operateur) {
-            case '+' -> additionnerConflit(a, b);
+            case '+' -> additionner(a, b);
             case '-' -> soustraire(a, b);
             case '*' -> multiplication(a, b);
             case '/' -> divisionChangement(a, b);
