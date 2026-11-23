@@ -54,6 +54,12 @@
       <artifactId>javafx-fxml</artifactId>
       <version>23.0.1</version>
     </dependency>
+    
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.5.12</version>
+    </dependency>
   </dependencies>
 
 
@@ -77,7 +83,7 @@
           <mainClass>fr.esir.omd.ci.App</mainClass>
         </configuration>
       </plugin>
-      
+
     </plugins>
   </build>
 </project>
