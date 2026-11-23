@@ -5,6 +5,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 public class TaskController {
     @FXML
     private TextField titleField;
@@ -20,6 +24,9 @@ public class TaskController {
     private TaskManager manager;
     private FileHandler fileHandler;
 
+    private static final Logger logger = LoggerFactory.getLogger(TaskController.class);
+
+
     public TaskController(){
         manager = new TaskManager();
         fileHandler = new FileHandler();
@@ -32,11 +39,13 @@ public class TaskController {
     }
 
     private void saveTask(String format) {
+
         String title = titleField.getText();
         String description = descriptionField.getText();
 
         if (title.isEmpty() || description.isEmpty()) {
             System.out.println("Les champs Titre et Description doivent être remplis.");
+            logger.warn("Les champs Titre et Description doivent être remplis.");// ajout d'un warning dans le logger
             return;
         }
 
