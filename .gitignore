@@ -1,2 +1,17 @@
 # Fichiers compiles Java
 *.class
+target/
+
+# Fichiers macOS et IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Fichiers annexes du sujet de TP et fichiers generes
+TP_ENONCE.md
+src_Part2_Maven/
+src_Part4_Maven/
+logs/
+tasks.json
+tasks.csv
+tasks.pdf

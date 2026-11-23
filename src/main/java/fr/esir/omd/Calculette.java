@@ -1,3 +1,4 @@
+package fr.esir.omd;
 import java.util.Scanner;
 
 public class Calculette {
